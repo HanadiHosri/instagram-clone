@@ -8,7 +8,7 @@ const Auth = () => {
 
     return (
         <div>
-            {isLogin ? (<Signin/>) : (<Signup setIsLogin={setIsLogin}/>) }
+            {isLogin ? (<Signin setIsLogin={setIsLogin}/>) : (<Signup setIsLogin={setIsLogin}/>) }
         </div>
     )
 }
