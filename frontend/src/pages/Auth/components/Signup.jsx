@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-const Signup = () => {
+const Signup = (props) => {
     const [credentials, setCredentials] = useState({email: "", password: "", name: ""});
     const navigate = useNavigate();
 
@@ -59,7 +59,7 @@ const Signup = () => {
                 <button className="button primary-bg rounded white-text" onClick={register}>Sign up</button>
             </div>
             <div className="container">
-                <p>Have an account? <a href="/login">Log in</a></p>
+                <p>Have an account? <a onClick={() => props.setIsLogin(true)}>Log in</a></p>
             </div>
         </div>
     )

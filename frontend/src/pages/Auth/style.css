@@ -22,4 +22,5 @@
 
 .container a {
     color: #4db5f9;
+    cursor: pointer;
 }
