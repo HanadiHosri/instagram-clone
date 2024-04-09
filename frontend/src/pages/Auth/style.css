@@ -19,3 +19,7 @@
 .container input{
     padding: 5px;
 }
+
+.container a {
+    color: #4db5f9;
+}
