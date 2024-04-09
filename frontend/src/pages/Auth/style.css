@@ -1,0 +1,21 @@
+.container {
+    border: 1px solid #c0c0c0;
+    width: 300px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.small-text {
+    font-size: small;
+}
+
+.button {
+    border: none;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+
+.container input{
+    padding: 5px;
+}

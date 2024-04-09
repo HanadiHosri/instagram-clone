@@ -1,9 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./styles/colors.css";
+import "./styles/utilities.css";
+import Auth from "./pages/Auth/index.jsx";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="app"></div>
+    <div className="app">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/auth" element={<Auth />} />
+          
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 
