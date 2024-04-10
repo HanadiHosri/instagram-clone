@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="app">
+    <div className="app flex center">
       <BrowserRouter>
         <Routes>
           <Route path="/auth" element={<Auth />} />

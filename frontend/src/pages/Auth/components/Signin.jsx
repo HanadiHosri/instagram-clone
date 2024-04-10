@@ -19,6 +19,7 @@ const Signin = (props) => {
                 formData,
             );
             if (response.data.status === "success") {
+                localStorage.setItem('token', response.data.authorisation.token);
                 navigate("/profile");
             }
 
